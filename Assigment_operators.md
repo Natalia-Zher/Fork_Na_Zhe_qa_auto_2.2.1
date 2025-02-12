@@ -117,3 +117,52 @@ console.log(x); // 10
 let y = 5;
 y ??= 20; // Does not assign because y is already defined
 console.log(y); // 5
+
+
+# Increment and Decrement in JavaScript
+
+## Increment (`++`)
+The increment operator increases a variable's value by 1.
+
+### Postfix Increment (`x++`)
+Returns the current value of the variable, then increases it by 1.
+
+```js
+let x = 5;
+console.log(x++); // 5 (returns the current value, then increments)
+console.log(x);   // 6 (now x is incremented)
+```
+
+### Prefix Increment (`++x`)
+Increases the variable's value first, then returns the new value.
+
+```js
+let y = 5;
+console.log(++y); // 6 (increments first, then returns the new value)
+console.log(y);   // 6 (y is already incremented)
+```
+
+## Decrement (`--`)
+The decrement operator decreases a variable's value by 1.
+
+### Postfix Decrement (`x--`)
+Returns the current value of the variable, then decreases it by 1.
+
+```js
+let a = 5;
+console.log(a--); // 5 (returns the current value, then decrements)
+console.log(a);   // 4 (now a is decremented)
+```
+
+### Prefix Decrement (`--x`)
+Decreases the variable's value first, then returns the new value.
+
+```js
+let b = 5;
+console.log(--b); // 4 (decrements first, then returns the new value)
+console.log(b);   // 4 (b is already decremented)
+```
+
+## Summary
+- **Postfix (`x++`, `x--`)**: Returns the original value, then modifies the variable.
+- **Prefix (`++x`, `--x`)**: Modifies the variable first, then returns the new value.
